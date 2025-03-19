@@ -50,6 +50,12 @@ class Order: Codable {
             return false
         }
         
+        if name.isOnlyWhiteSpace || streetAddress.isOnlyWhiteSpace || city.isOnlyWhiteSpace || zip.isOnlyWhiteSpace {
+            return false
+        }
+        
+        
+        
         return true
     }
     
